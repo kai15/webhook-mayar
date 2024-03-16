@@ -1,5 +1,26 @@
 {
+  "name": "webhook-mayar",
+  "version": "0.1.0",
+  "description": "webhook-mayar",
+  "engines": {
+    "node": "20.x"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
   "dependencies": {
-    "express": "^4.18.3"
-  }
+    "express": "^4.15.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kai15/webhook-mayar"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
 }
