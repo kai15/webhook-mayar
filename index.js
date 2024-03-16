@@ -1,14 +1,22 @@
 const express = require('express')
+const bodyParser = require("body-parser")
 const app = express()
 const port = process.env.PORT || 5001
 
+app.use(bodyParser.json())
+
 app.get('/', (req, res) => {
-    console.log("req", req)
+    console.log("/")
     res.send('Hello World!')
 })
 
-app.post('/webhook', (req, res) => {
-    console.log("req", req)
+app.post("/hook", (req, res) => {
+    console.log("hook", req.body) // Call your action on the request here
+    res.status(200).end() // Responding is important
+})
+
+app.get('/webhook', (req, res) => {
+    console.log("webhook")
     res.status(200).send(`OK ${req.params.url}`)
 })
 
