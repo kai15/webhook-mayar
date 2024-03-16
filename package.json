@@ -5,10 +5,9 @@
   "engines": {
     "node": "20.x"
   },
-  "main": "webhook.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node webhook.js",
-    "default": "node index.js",
+    "start": "node index.js",
     "test": "node test.js"
   },
   "dependencies": {
